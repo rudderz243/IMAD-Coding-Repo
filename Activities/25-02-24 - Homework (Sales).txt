@@ -1,0 +1,27 @@
+OPTION 1
+fun main() {
+    val daily_sales: Double = 2147.50
+
+    var answer = (daily_sales * 7)
+    println("The weekly sales amount would be R" + weekly_sales)
+
+    answer = (daily_sales * 28)
+    println("The monthly sales amount would be R" + monthly_sales)
+
+    answer = (daily_sales * 365)
+    println("The yearly sales amount would be R" + yearly_sales)
+}
+
+OPTION 2
+fun main() {
+    val daily_sales: Double = 2147.50
+    
+    val weekly_sales = (daily_sales*7)
+    println("The weekly sales amount would be R" + weekly_sales)
+    
+    val monthly_sales = (weekly_sales * 4)
+    println("The monthly sales amount would be R" + monthly_sales)
+    
+    val yearly_sales = (monthly_sales * 12)
+    println("The yearly sales amount would be R" + yearly_sales)
+}

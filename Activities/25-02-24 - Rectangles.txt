@@ -1,0 +1,10 @@
+fun main() {    
+    val rectangle_length: Double = 3.5
+    val rectangle_width: Double = 4.5
+    
+    var answer = (2*rectangle_length) + (2*rectangle_width)
+    println("The perimeter is equal to: " + answer)
+    
+    answer = (rectangle_length*rectangle_width)
+    println("The area is equal to: " + answer)
+}

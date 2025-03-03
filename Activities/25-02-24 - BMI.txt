@@ -1,0 +1,7 @@
+fun main() {    
+	val persons_weight: Double = 85.2
+    val persons_height: Double = 1.83
+    
+    val BMI = persons_weight / (persons_height*persons_height)
+    println("Your BMI is: " + BMI)
+}
