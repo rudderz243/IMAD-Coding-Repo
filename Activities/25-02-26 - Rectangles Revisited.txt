@@ -1,11 +1,11 @@
 fun main() {    
     // setting our values for width and length
-    val rectangle_length: Double = 3.5
-    val rectangle_width: Double = 4.5
+    val rectangleLength: Double = 3.5
+    val rectangleWidth: Double = 4.5
     
     // changed it from changing the value of 1 variable, to storing each value in its own variable
-    val perimeter = (2*rectangle_length) + (2*rectangle_width)
-    val area = (rectangle_length*rectangle_width)
+    val perimeter = (2 * rectangleLength) + (2 * rectangleWidth)
+    val area = (rectangleLength * rectangleWidth)
 
     // using if, else
     if (perimeter > area) {
