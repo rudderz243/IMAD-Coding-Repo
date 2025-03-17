@@ -1,0 +1,25 @@
+fun main() {    
+    // setting our values for width and length
+    val rectangleLength: Double = 3.5
+    val rectangleWidth: Double = 4.5
+    
+    // changed it from changing the value of 1 variable, to storing each value in its own variable
+    val perimeter = (2 * rectangleLength) + (2 * rectangleWidth)
+    val area = (rectangleLength * rectangleWidth)
+
+    // using if, else
+    if (perimeter > area) {
+        println("The perimeter is greater than the area.")
+    } else if (area > perimeter) {
+        println("The area is greater than the perimeter.")
+    } else {
+        println("The area and the perimeter are equal in value.")
+    }
+    
+    // using when
+    when {
+        (perimeter > area) -> println("The perimeter is greater than the area.")
+        (area > perimeter) -> println("The area is greater than the perimeter.")
+        else -> println("The area and the perimeter are equal in value.")
+    }
+}

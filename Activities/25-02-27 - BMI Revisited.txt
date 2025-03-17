@@ -1,0 +1,28 @@
+fun main() {    
+	val personsWeight: Double = 85.2
+    val personsHeight: Double = 1.83
+    
+    val BMI = personsWeight / (personsHeight * personsHeight)
+    
+    // using a "when" statement
+    when {
+        BMI < 18.5 -> println("Underweight")
+        BMI in 18.5 .. 24.9 -> println("Healthy")
+        BMI in 25.0 .. 29.9 -> println("Overweight")
+        BMI > 30.0 -> println("Obese")
+        else -> println("Invalid input")
+    }
+    
+    // using "if" statements
+    if (BMI < 18.5) {
+        println("Underweight")
+    } else if (BMI in 18.5 .. 24.9) {
+        println("Healthy")
+    } else if (BMI in 25.0 .. 29.9) {
+        println("Overweight")
+    } else if (BMI > 30.0) {
+        println("Obese")
+    } else {
+        println("Invalid Input")
+    }
+}
