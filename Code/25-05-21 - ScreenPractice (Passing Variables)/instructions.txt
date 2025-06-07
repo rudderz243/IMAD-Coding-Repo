@@ -1,0 +1,9 @@
+screen 1
+heading - message sender (lblHeadingScreen1)
+two inputs (plain text) (txtMessage1, txtMessage2)
+button - send (btnSend)
+
+screen 2
+heading - message receiver (lblHeadingScreen2)
+two outputs (textviews) (lblMessage1, lblMessage2)
+two buttons (go back, close) (btnBack, btnClose)

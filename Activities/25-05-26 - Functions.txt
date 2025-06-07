@@ -1,0 +1,49 @@
+fun main() {
+    // declaring our array
+    var nums = arrayOf(12, 25, 4, 32, 11, 7, 9, 10)
+    // calling our printArray method to print out the unsorted version
+    println(printArray(nums))
+    // creating a new variable to hold our sorted version of the array, and calling the method to sort it
+    val sortedArray = bubbleSort(nums)
+    // printing out the sorted version of the array using our method
+    println(printArray(sortedArray))
+}
+
+// creating a NEW function, called printarray, that takes in an array of numbers, and returns a string
+fun printArray(nums: Array<Int>) : String
+{
+    // start off with an empty output string
+    var outputString : String = ""
+    // set the counter to 0
+    var counter = 0
+    // for every element in the array, add it to the output string, with a comma at the end
+    while (counter < nums.size) {
+        outputString = outputString + nums[counter] + ", "
+        counter++
+    }
+    // return the array printed out into the string
+    return outputString
+}
+
+fun bubbleSort(nums: Array<Int>) : Array<Int>
+    {
+        // first, we get how many things are in the array
+        val numberOfElements = nums.size
+        // the firstl loop, our outer loop, controls where in the array our second loop will start
+        // it goes up by 1 after each element is sorted
+        for (i in 0 until numberOfElements - 1) {
+           // second loop will check the current element against the rest of the elements
+            for ( j in 0 until numberOfElements - i - 1) {
+                // check the elements
+                if (nums[j] > nums[j+1]) {
+                    // we declare a temp to hold the value we are swapping, then we swap
+                    val temp = nums[j]
+                    nums[j] = nums[j+1]
+                    nums[j+1] = temp
+                }
+            }
+        }
+        // pass back the sorted version of the array
+        return nums
+    }
+

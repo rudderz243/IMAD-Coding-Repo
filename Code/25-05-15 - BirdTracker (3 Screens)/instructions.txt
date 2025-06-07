@@ -1,0 +1,23 @@
+3 Screens:
+
+== Main Screen ==
+TextView Heading
+Button to "View Logged Birds"
+Button to "Log New Bird"
+
+== Log New Bird Screen ==
+TextView Heading
+Plain Text to enter the Type of Bird
+Plain Text to enter the Date
+Plain Text to enter the Time
+Plain Text to enter the Location
+Button to "Log New Bird" (which saves it to the array)
+Button to "Go Back to Main Menu" 
+Button to "Reset"
+
+== View Logged Birds Screen == 
+TextView Heading
+TextView that displays all the logged birds (from the array)
+Button to "Go Back to Main Menu"
+
+
